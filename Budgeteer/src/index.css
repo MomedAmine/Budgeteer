@@ -13,6 +13,11 @@ body {
   /* background-color: var(--Secondary-Color); */
   /* background-color: aqua; */
 }
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+/* Header CSS */
 #Header {
   display: flex;
   align-items: center;
@@ -21,7 +26,6 @@ body {
   margin: 0 0;
   padding: 0 3vw;
 }
-
 #Header h1 {
   display: block;
   color: var(--Secondary-Color);
@@ -29,6 +33,7 @@ body {
   font-size: 7vh;
 }
 
+/* Welcome container CSS */
 #welcomeContainer {
   display: flex;
   flex-direction: column;
@@ -81,10 +86,10 @@ body {
   box-shadow: 2px 2px 5px darkblue;
   cursor: pointer;
 }
+
+/* Action Container */
 #actionContainer {
-  /* background-color: aqua; */
   display: flex;
-  /* flex-wrap: wrap; */
   min-height: 80vh;
 }
 #actionDiv {
@@ -100,11 +105,12 @@ body {
   border-radius: 1rem;
   padding: 2%;
 }
-html {
-  min-height: 100%;
-  min-width: 100%;
+
+  /* Add Category action */
+#addCategoryContainer {
+    width: 100%;
 }
-#InOutDiv {
+/* #InOutDiv {
   user-select: none;
   width: 100%;
   margin: 5px;
@@ -112,35 +118,13 @@ html {
   transition: 0.1s ease;
   box-shadow: 0px 0px 3px gray;
 }
-#addCategoryFormDiv {
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  padding: 3%;
-  border-radius: 0px 0px 25px 25px;
-  border-width: 3px;
-  border-color: transparent black black black;
-  border-style: solid;
-  font-size: 1.5rem;
-  /* margin-top: -px; */
-}
-#newIncomeInputDiv {
-  display: flex;
-}
-#newIncomeNameInput {
-  flex: 1;
-  margin-left: 5px;
-  border: none;
-  box-shadow: 0px 0px 3px gray;
-}
-
 #InOutlabels {
   user-select: none;
   display: flex;
   justify-content: space-between;
   margin: 0px;
 }
-/* #InOutlabels:hover, */
+
 #InOutlabels *:hover {
   cursor: pointer;
   background-color: #eee;
@@ -155,11 +139,31 @@ html {
   background-color: #fff;
   transition: 0.3s ease-in-out;
 }
-#addCategoryContainer {
-  width: 100%;
-}
 
-@media screen and (max-width: 750px) {
+
+#addCategoryFormDiv {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 3%;
+  border-radius: 0px 0px 25px 25px;
+  border-width: 3px;
+  border-color: transparent black black black;
+  border-style: solid;
+  font-size: 1.5rem;
+}
+#newIncomeInputDiv {
+  display: flex;
+}
+#newIncomeNameInput {
+  flex: 1;
+  margin-left: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+} */
+
+
+@media screen and (max-width: 800px) {
   #actionContainer {
     flex-direction: column;
     align-items: center;
@@ -168,5 +172,8 @@ html {
     width: 90%;
     justify-content: center;
     text-align: center;
+  }
+  #Header {
+    justify-content: center;
   }
 }
