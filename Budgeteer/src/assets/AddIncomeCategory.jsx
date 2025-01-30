@@ -1,13 +1,14 @@
 function AddIncomeCategory() {
   return (
-    <form action="/SubmitNewIncomeStream" id="SubmitNewIncomeStreamForm">
+    <form action="/SubmitNewIncomeStream" id="SubmitNewIncomeStreamForm" className="SubmitNewCategoryForm">
       <div id="newIncomeInputDiv">
         <label htmlFor="newIncomeName">New Income stream name :</label>
         <input type="text" name="newIncomeName" id="newIncomeNameInput" />
       </div>
       <input
         type="button"
-        value="SubmitNewIncomeStream"
+        className="SubmitNewCategoryButton"
+        value="Submit New Income Stream"
         id="newIncomeSubmitBtn"
       />
     </form>
