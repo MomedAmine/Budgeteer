@@ -106,59 +106,7 @@ html {
   padding: 0px 0px;
 }
 
-  /* Add Category action */
-
-/* #InOutDiv {
-  user-select: none;
-  width: 100%;
-  margin: 5px;
-  border-radius: 25px;
-  transition: 0.1s ease;
-  box-shadow: 0px 0px 3px gray;
-}
-#InOutlabels {
-  user-select: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-}
-
-#InOutlabels *:hover {
-  cursor: pointer;
-  background-color: #eee;
-}
-#InOutDiv #InOutCheckBox {
-  display: none;
-}
-#InOutlabels > label {
-  padding: 5px 20px;
-  text-align: center;
-  flex: 1;
-  background-color: #fff;
-  transition: 0.3s ease-in-out;
-}
-
-
-#addCategoryFormDiv {
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  padding: 3%;
-  border-radius: 0px 0px 25px 25px;
-  border-width: 3px;
-  border-color: transparent black black black;
-  border-style: solid;
-  font-size: 1.5rem;
-}
-#newIncomeInputDiv {
-  display: flex;
-}
-#newIncomeNameInput {
-  flex: 1;
-  margin-left: 5px;
-  border: none;
-  box-shadow: 0px 0px 3px gray;
-} */
+/* Add Category action */
 /* Add Category CSS */
 .AddCategoryDiv{
   background-color: #fff;
@@ -235,7 +183,7 @@ html {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #actionContainer {
     flex-direction: column;
     align-items: center;

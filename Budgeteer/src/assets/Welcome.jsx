@@ -1,6 +1,11 @@
+import { useState } from "react";
 import AddCategory from "./AddCategory";
+import NewAction from "./NewAction";
 function Welcome() {
   const name = "Mohamed";
+  const newAction = <NewAction/>
+  const addCategory = <AddCategory/>
+  const [action,setAction] = useState(addCategory)
 
   return (
     <div id="actionContainer">
@@ -14,14 +19,14 @@ function Welcome() {
             <p>What are you looking to do today ?</p>
           </div>
           <div id="btnContainer">
-            <button> New Category </button>
-            <button> New Action </button>
+            <button onClick={()=>setAction(addCategory)}> New Category </button>
+            <button onClick={()=>setAction(newAction)}> New Action </button>
             <button> Review Finances </button>
           </div>
         </div>
       </div>
       <div id="actionDiv">
-        <AddCategory />
+        {action}
       </div>
     </div>
   );
