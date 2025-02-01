@@ -4,6 +4,7 @@ import NewIncomeTransaction from "./NewIncomeTransaction";
 
 function NewAction() {
     
+    // const
     const [InExp,setInExp] = useState()
     return(
         <div style={{width:"95%",}}>
@@ -17,7 +18,7 @@ function NewAction() {
                     </select>
                 </div>
                 <div className="SubmitNewCategoryForm">
-                    {}
+                    {/* {(InExp == "Income")?} */}
                 </div>
             </form>
         </div>
