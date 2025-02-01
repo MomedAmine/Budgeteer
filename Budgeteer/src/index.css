@@ -31,6 +31,7 @@ html {
   color: var(--Secondary-Color);
   font-family: "Brush Script MT", cursive;
   font-size: 7vh;
+  margin: -1.5vh 0px 0px 0px;
 }
 
 /* Welcome container CSS */
@@ -129,6 +130,7 @@ html {
   cursor: pointer;
   text-shadow: 0px 0px 2px var(--Primary-Color);
 }
+/* Form CSS */
 .SubmitNewCategoryForm{
   display: flex;
   text-align: center;
@@ -158,6 +160,9 @@ html {
   border: none;
   box-shadow: 0px 0px 2px black;
   height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  /* transition: ease-in-out 0.6s; */
 }
 .SubmitNewCategoryForm input[type="button"]{
   min-width: 20%;
