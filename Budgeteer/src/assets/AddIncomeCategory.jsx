@@ -5,12 +5,14 @@ function AddIncomeCategory() {
         <label htmlFor="newIncomeName">New Income stream name :</label>
         <input type="text" name="newIncomeName" id="newIncomeNameInput" className="SubmitNewCategoryFormInput" />
       </div>
-      <input
-        type="button"
-        className="SubmitNewCategoryButton"
-        value="Submit New Income Stream"
-        id="newIncomeSubmitBtn"
-      />
+      <div style={{justifyContent:"flex-end"}}>
+        <input
+          type="button"
+          className="SubmitNewCategoryButton"
+          value="Submit New Income Stream"
+          id="newIncomeSubmitBtn"
+        />
+      </div>
     </form>
   );
 }
