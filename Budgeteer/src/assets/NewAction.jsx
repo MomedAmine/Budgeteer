@@ -18,7 +18,12 @@ function NewAction() {
             <form action="/SubmitNewTransaction" className="SubmitNewCategoryForm">
                 <div id="NewTransactionType">
                     <label htmlFor="NewTransactionTypeSelect">Transaction Type :</label>
-                    <select name="NewTransactionTypeSelect" id="NewTransactionTypeSelect" className="SubmitNewCategoryFormInput" onChange={handleInExpChange}>
+                    <select 
+                        name="NewTransactionTypeSelect" 
+                        id="NewTransactionTypeSelect" 
+                        className="SubmitNewCategoryFormInput" 
+                        onChange={handleInExpChange}>
+                            
                         <option value="Income">Income</option>
                         <option value="Expence">Expence</option>
                     </select>
